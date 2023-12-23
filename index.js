@@ -16,7 +16,7 @@ const app = express();
 const PORT = 8000;
 
 //for swagger ui
-app.use("/api-docs", swagger.serve, swagger.setup(apiDocs));
+app.use("/", swagger.serve, swagger.setup(apiDocs));
 
 
 app.use(cookeiParser());
