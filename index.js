@@ -57,7 +57,7 @@ conectToMongo(url)
 
 //routes
 
-app.use("/api-docs", swagger.serve, swagger.setup(apiDocs));
+app.use("/", swagger.serve, swagger.setup(apiDocs));
 app.use('/url', urlRouter);
 app.use('api/user', userRouter)
 
